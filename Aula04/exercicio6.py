@@ -1,0 +1,6 @@
+s = float(input("Salário: "))
+perc=float(input("Porcentagem de aumento: "))
+ns = s+(s * (perc/100))
+print(f"Salario Anterior.....: R$ {s:9.2f}")
+print(f"Percentual de Aumento: {perc:9.2f}%")
+print(f"Novo salário.........: R$ {ns:9.2f}")
