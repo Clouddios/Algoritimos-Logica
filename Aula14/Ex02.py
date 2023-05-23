@@ -8,9 +8,12 @@ def primo(n):
             
 def impprimo(n):
     primos = []
-    for i in range(0,n+1):
+    cont, i = 0, 0
+    while cont < n:
         if primo(i):
             primos.append(i)
+            cont += 1
+        i += 1
     
     return(primos)
             
@@ -24,10 +27,9 @@ if n > 1:
 
 soma = 0
 
-listaprimos = impprimo(n)     
-for i in range(0, n+1):
-    if primo(i):
-        soma += i
+listaprimos = impprimo(n)
+
+soma = sum(listaprimos)
 
 print(listaprimos)
 print(f"Soma do numeros primos é {soma}")
